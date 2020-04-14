@@ -1,0 +1,52 @@
+{
+  "faq": [
+    {
+      "question": "Qu’est-ce que le Coronavirus COVID-19 ?",
+      "answer": "Les Coronavirus sont une grande famille de virus, qui provoquent des maladies allant d’un simple rhume (certains virus saisonniers sont des Coronavirus) à des pathologies plus sévères comme le MERS-COV ou le SRAS. Le virus identifié en janvier 2020 en Chine est un nouveau Coronavirus. La maladie provoquée par ce Coronavirus a été nommée COVID-19 par l’Organisation mondiale de la Santé - OMS. Depuis le 11 mars 2020, l’OMS qualifie la situation mondiale du COVID-19 de pandémie ; c’est-à-dire que l’épidémie touche désormais 137 pays sur une zone étendue."
+    },
+    {
+      "question": "Quels sont les symptômes du Coronavirus COVID-19 ?",
+      "answer": "Les symptômes principaux sont la fièvre ou la sensation de fièvre et des signes de difficultés respiratoires de type toux ou essoufflement."
+    },
+    {
+      "question": "Existe-t-il un vaccin ?",
+      "answer": "Il n’existe pas de vaccin contre le Coronavirus COVID-19 pour le moment. Plusieurs traitements sont en cours d’évaluation en France, en lien avec l’OMS pour être utilisés contre le Coronavirus COVID-19. Dans l’attente, le traitement est symptomatique."
+    },
+    {
+      "question": "La prise d'anti-inflammatoires (ibuprofène, cortisone...) pourrait être un facteur d'aggravation de l'infection ?",
+      "answer": "De nombreux programmes français et européens et des essais cliniques, sont en cours afin d’améliorer le diagnostic, la compréhension et la prise en charge de cette maladie. Par ailleurs, des équipes travaillent sur plusieurs pistes de traitement à Paris, Marseille ou encore Lyon ; les protocoles ont commencé. Des équipes sont également à pied d'œuvre pour inventer un vaccin, qui pourra voir le jour dans les prochains mois."
+    },
+    {
+      "question": "Comment se transmet le Coronavirus COVID-19 ?",
+      "answer": "La maladie se transmet par les postillons (éternuements, toux). On considère donc qu’un contact étroit avec une personne malade est nécessaire pour transmettre la maladie : même lieu de vie, contact direct à moins d’un mètre lors d’une toux, d’un éternuement ou une discussion en l’absence de mesures de protection.  Un des vecteurs privilégiés de la transmission du virus est le contact des mains non lavées."
+    },
+    {
+      "question": "Quel est le délai d’incubation de la maladie ?",
+      "answer": "Le délai d’incubation, période entre la contamination et l’apparition des premiers symptômes.  Le délai d’incubation du coronavirus COVID-19 est de 3 à 5 jours en général, il peut toutefois s’étendre jusqu’à 14 jours. Pendant cette période, le sujet peut être contagieux : il peut être porteur du virus avant l’apparition des symptômes ou à l’apparition de signaux faibles."
+    },
+    {
+      "question": "D’où vient le coronavirus COVID-19 ?",
+      "answer": "Les premières personnes à avoir contracté le virus s’étaient rendues au marché de Wuhan dans la Province de Hubei en Chine. Une maladie transmise par l’animal (zoonose) est donc privilégiée mais l’origine n’a pas été confirmée."
+    },
+    {
+      "question": "Le virus a-t-il muté ? ",
+      "answer": "Non, mais selon les dernières données scientifiques, il existerait deux souches circulantes du virus (L et S). La souche S serait plus ancienne que la souche L. À ce stade, rien ne permet de confirmer si la mutation a eu lieu chez l’homme ou chez les hôtes intermédiaires (animal). La souche L serait la souche circulante la plus sévère et la plus fréquente (70% des échantillons testés dans l’étude), tandis que la souche S serait moins agressive et moins fréquente (30% des échantillons). Grâce aux moyens de détection et aux mesures de lutte contre le coronavirus, la circulation de la souche L, plus sévère et donc plus facilement détectable, tend à diminuer."
+    },
+    {
+      "question": "Peut-on attraper la maladie par l’eau ?",
+      "answer": "A ce jour, il n’a pas été rapporté de contamination par l’eau. Cette maladie est à transmission respiratoire et probablement de l’animal à l’homme, mais la source n’est pas encore identifiée."
+    },
+    {
+      "question": "Existe-t-il des risques liés aux animaux domestiques (d'élevage et familiers) ?",
+      "answer": "Il n'existe aucune preuve que les animaux domestiques jouent un rôle dans la propagation coronavirus COVID-19, le coronavirus à l’origine du COVID-19 (sources OIE, OMS et Anses)."
+    },
+    {
+      "question": "Existe-t-il des risques liés aux aliments ?",
+      "answer": "Au vu des informations disponibles, le passage du Coronavirus COVID-19 de l’être humain vers une autre espèce animale semble actuellement peu probable, et la possible contamination des denrées alimentaires d’origine animale (DAOA) à partir d’un animal infecté par le COVID-19 est exclue. Les aliments crus ou peu cuits ne présentent pas de risques de transmission d’infection particuliers, dès lors que les bonnes règles d’hygiène habituelles sont respectées lors de la manipulation et de la préparation des denrées alimentaires."
+    },
+    {
+      "question": "Y aura t-il une seconde vague de virus qui touchera les plus jeunes ?",
+      "answer": "Les mesures annoncées par le Président de la République ont pour objectif freiner la progression de l’épidémie. Dès lors, la vitesse de propagation du virus se ralentit et permet de limiter le nombre de personnes atteintes en même temps par le virus. Dans cette stratégie, le type de personnes atteintes par le virus, et la répartition des cas simples, notamment en fonction de l’âge ou de l’existence de plusieurs maladies n’est pas modifié. Les études internationales nous montrent que si les personnes fragiles sont les plus à risque de développer une forme grave d’infection au Coronavirus, l’ensemble de la population peut également être concernée. Quelques cas d’infection grave au Coronavirus chez des patients hors personnes âgées ou fragiles ont effectivement été constatés dans d’autres pays."
+    }
+  ]
+}
