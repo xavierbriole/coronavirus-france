@@ -6,13 +6,13 @@ import {
   ListItemIcon,
   ListItemText,
   Typography,
-  Link
+  Link,
 } from "@material-ui/core";
 import { QuestionAnswer, Share, CloudDownload } from "@material-ui/icons";
 import packageJson from "../../package.json";
 
 type Props = {|
-  onItemClick: (item: { id: string, title: string }) => void
+  onItemClick: (item: { id: string, title: string }) => void,
 |};
 
 export default class Menu extends React.Component<Props> {
@@ -31,7 +31,7 @@ export default class Menu extends React.Component<Props> {
             key="faq"
             onClick={this.onButtonClick.bind(this, {
               id: "faq",
-              title: "Questions / Réponses"
+              title: "Questions / Réponses",
             })}
           >
             <ListItemIcon>
@@ -44,7 +44,7 @@ export default class Menu extends React.Component<Props> {
             key="attest"
             onClick={this.onButtonClick.bind(this, {
               id: "attest",
-              title: "Télécharger une attestation"
+              title: "Télécharger une attestation",
             })}
           >
             <ListItemIcon>
@@ -57,7 +57,7 @@ export default class Menu extends React.Component<Props> {
             key="share"
             onClick={this.onButtonClick.bind(this, {
               id: "share",
-              title: "Partager"
+              title: "Partager",
             })}
           >
             <ListItemIcon>
@@ -75,7 +75,26 @@ export default class Menu extends React.Component<Props> {
                 color="textSecondary"
                 align="center"
               >
-                {`Version ${packageJson.version} par XB`}
+                {`Version ${packageJson.version}`}
+              </Typography>
+            </ListItemText>
+          </ListItem>
+        </List>
+        <Divider />
+        <List>
+          <ListItem key="github">
+            <ListItemText>
+              <Typography
+                variant="caption"
+                color="textSecondary"
+                align="center"
+              >
+                <Link
+                  href="https://github.com/xavierbriole/coronavirus-france"
+                  target="_blank"
+                >
+                  GitHub
+                </Link>
               </Typography>
             </ListItemText>
           </ListItem>
