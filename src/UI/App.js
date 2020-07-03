@@ -10,7 +10,7 @@ import { Link } from "@material-ui/core";
 
 type State = {|
   modalOpen: boolean,
-  currentItem?: { id: string, title: string }
+  currentItem?: { id: string, title: string },
 |};
 
 export default class App extends React.Component<Props, State> {
@@ -39,7 +39,7 @@ export default class App extends React.Component<Props, State> {
   handleModalOpen(item: { id: string, title: string }) {
     this.setState({
       modalOpen: true,
-      currentItem: { id: item.id, title: item.title }
+      currentItem: { id: item.id, title: item.title },
     });
 
     ReactGA.event({ category: "user", action: "open-modal", label: item.id });
@@ -83,7 +83,11 @@ export default class App extends React.Component<Props, State> {
           {this.renderModalContent()}
         </Dialog>
         <NavigationBar
-          title={<Link href={window.location} color="secondary" underline="none">Coronavirus en France</Link>}
+          title={
+            <Link href={window.location} color="secondary" underline="none">
+              Coronavirus en France
+            </Link>
+          }
           menu={<Menu onItemClick={this.handleModalOpen.bind(this)} />}
         >
           <Frame />

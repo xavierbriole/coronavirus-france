@@ -6,19 +6,22 @@ import { blueGrey, grey } from "@material-ui/core/colors";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: blueGrey[900]
+      main: blueGrey[900],
     },
     secondary: {
-      main: grey[50]
-    }
+      main: grey[50],
+    },
+    background: {
+      default: "#000000",
+    },
   },
   typography: {
-    fontFamily: "'Work Sans', sans-serif"
-  }
+    fontFamily: "'Work Sans', sans-serif",
+  },
 });
 
 type Props = {|
-  children: React.ChildrenArray<any>
+  children: React.ChildrenArray<any>,
 |};
 
 export default class Theme extends React.Component<Props> {

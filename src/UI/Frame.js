@@ -11,7 +11,7 @@ export default class Frame extends React.Component {
             isMobile
               ? "bae8aaa7a0b14261b4621c31db410c44"
               : "5df19abcf8714bc590a3b143e14a548c"
-          }" class="iframe">`
+          }" class="iframe">`,
         }}
       ></div>
     );

@@ -7,7 +7,7 @@ import {
   List,
   ListItem,
   ListItemIcon,
-  ListItemText
+  ListItemText,
 } from "@material-ui/core";
 import PDFIcon from "./Icons/PDF";
 import ReactGA from "react-ga";
@@ -17,7 +17,7 @@ export default class Attestation extends React.Component {
     ReactGA.event({
       category: "user",
       action: "download",
-      label: "deplacement-derogatoire"
+      label: "deplacement-derogatoire",
     });
   }
 
@@ -25,7 +25,7 @@ export default class Attestation extends React.Component {
     ReactGA.event({
       category: "user",
       action: "download",
-      label: "deplacement-professionnel"
+      label: "deplacement-professionnel",
     });
   }
 

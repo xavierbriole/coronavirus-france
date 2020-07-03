@@ -9,21 +9,21 @@ import {
   TwitterShareButton,
   TwitterIcon,
   WhatsappShareButton,
-  WhatsappIcon
+  WhatsappIcon,
 } from "react-share";
 import {
   Grid,
   Input,
   IconButton,
   Snackbar,
-  Container
+  Container,
 } from "@material-ui/core";
 import { FileCopy } from "@material-ui/icons";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import ReactGA from "react-ga";
 
 type State = {|
-  displaySnack: boolean
+  displaySnack: boolean,
 |};
 
 export default class Share extends React.Component<State> {
@@ -38,7 +38,7 @@ export default class Share extends React.Component<State> {
 
     ReactGA.event({
       category: "user",
-      action: "copy-to-clipboard-click"
+      action: "copy-to-clipboard-click",
     });
   }
 
