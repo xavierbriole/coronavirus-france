@@ -7,6 +7,7 @@ import FAQ from "./FAQ";
 import Share from "./Share";
 import Attestation from "./Attestation";
 import { Link } from "@material-ui/core";
+import CookieNotice from "react-cookienotice";
 
 type State = {|
   modalOpen: boolean,
@@ -92,6 +93,7 @@ export default class App extends React.Component<Props, State> {
         >
           <Frame />
         </NavigationBar>
+        <CookieNotice />
       </Theme>
     );
   }
