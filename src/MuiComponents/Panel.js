@@ -1,8 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import ExpansionPanel from "@material-ui/core/ExpansionPanel";
-import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
-import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
@@ -16,14 +16,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimpleExpansionPanel({ datas, onPanelOpen }) {
+export default function SimpleAccordion({ datas, onPanelOpen }) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       {datas.map((data, index) => {
         return (
-          <ExpansionPanel
+          <Accordion
             key={index}
             onChange={(event, expanded) => {
               if (!expanded) {
@@ -33,7 +33,7 @@ export default function SimpleExpansionPanel({ datas, onPanelOpen }) {
               onPanelOpen(data.question);
             }}
           >
-            <ExpansionPanelSummary
+            <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls={`panel${index}-content`}
               id={`panel${index}-header`}
@@ -41,11 +41,11 @@ export default function SimpleExpansionPanel({ datas, onPanelOpen }) {
               <Typography className={classes.heading}>
                 {data.question}
               </Typography>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
+            </AccordionSummary>
+            <AccordionDetails>
               <Typography>{data.answer}</Typography>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
+            </AccordionDetails>
+          </Accordion>
         );
       })}
     </div>
