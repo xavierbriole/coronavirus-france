@@ -5,26 +5,31 @@
   "license": "MIT",
   "homepage": "https://www.coronavirusenfrance.fr/",
   "dependencies": {
-    "@material-ui/core": "^4.9.10",
+    "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/user-event": "^12.1.6",
     "react": "^16.13.1",
-    "react-cookienotice": "^3.2.0",
+    "react-cookienotice": "^3.3.0",
     "react-copy-to-clipboard": "^5.0.2",
-    "react-device-detect": "^1.11.14",
+    "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
-    "react-ga": "^2.7.0",
-    "react-scripts": "3.4.1",
-    "react-share": "^4.1.0"
+    "react-ga": "^3.1.2",
+    "react-scripts": "3.4.3",
+    "react-share": "^4.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && cp CNAME build/CNAME",
-    "test": "react-scripts test",
+    "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "flow-check-annotation": "check-flow-annotation -x src/serviceWorker.js -x src/setupTests.js",
+    "flow": "flow check --color=always",
+    "prettier-check": "prettier --check src",
+    "prettier-fix": "prettier --write src",
+    "lint": "eslint src --max-warnings=0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,6 +47,19 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "check-flow-annotation": "^1.0.4",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-standard": "^4.0.1",
+    "flow-bin": "^0.134.0",
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.1.2"
   }
 }

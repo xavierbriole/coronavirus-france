@@ -1,17 +1,18 @@
-name: deploy
+name: pull-request
 
 on:
-  push:
-    tags:
-      - 'v*'
+  pull_request:
+    branches:
+      - master
 
 jobs:
-  deploy:
+  pull-request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Use Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 12.18.4
@@ -32,12 +33,3 @@ jobs:
 
       - name: Run tests
         run: yarn run test
-
-      - name: Build App
-        run: yarn run build
-
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
