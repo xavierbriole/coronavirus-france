@@ -22,13 +22,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && cp CNAME build/CNAME",
-    "test": "react-scripts test",
+    "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
     "flow-check-annotation": "check-flow-annotation -x src/serviceWorker.js -x src/setupTests.js",
     "flow": "flow check --color=always",
-    "prettier-check": "prettier --check \"src/**/*.js\"",
-    "prettier-fix": "prettier --write \"**/*.{js,json,css}\"",
+    "prettier-check": "prettier --check src",
+    "prettier-fix": "prettier --write src",
     "lint": "eslint src --max-warnings=0"
   },
   "eslintConfig": {
