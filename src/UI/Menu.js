@@ -1,4 +1,6 @@
-import * as React from "react";
+// @flow
+
+import * as React from 'react'
 import {
   Divider,
   List,
@@ -7,73 +9,73 @@ import {
   ListItemText,
   Typography,
   Link,
-} from "@material-ui/core";
-import { QuestionAnswer, Share, CloudDownload } from "@material-ui/icons";
-import packageJson from "../../package.json";
+} from '@material-ui/core'
+import { QuestionAnswer, Share, CloudDownload } from '@material-ui/icons'
+import packageJson from '../../package.json'
 
 type Props = {|
   onItemClick: (item: { id: string, title: string }) => void,
-|};
+|}
 
 export default class Menu extends React.Component<Props> {
   onButtonClick(item: { id: string, title: string }) {
-    const { onItemClick } = this.props;
+    const { onItemClick } = this.props
 
-    onItemClick(item);
+    onItemClick(item)
   }
 
-  render() {
+  render(): React.Node {
     return (
       <React.Fragment>
         <List>
           <ListItem
             button
-            key="faq"
+            key='faq'
             onClick={this.onButtonClick.bind(this, {
-              id: "faq",
-              title: "Questions / Réponses",
+              id: 'faq',
+              title: 'Questions / Réponses',
             })}
           >
             <ListItemIcon>
               <QuestionAnswer />
             </ListItemIcon>
-            <ListItemText primary="FAQ" />
+            <ListItemText primary='FAQ' />
           </ListItem>
           <ListItem
             button
-            key="attest"
+            key='attest'
             onClick={this.onButtonClick.bind(this, {
-              id: "attest",
-              title: "Télécharger une attestation",
+              id: 'attest',
+              title: 'Télécharger une attestation',
             })}
           >
             <ListItemIcon>
               <CloudDownload />
             </ListItemIcon>
-            <ListItemText primary="Attestations" />
+            <ListItemText primary='Attestations' />
           </ListItem>
           <ListItem
             button
-            key="share"
+            key='share'
             onClick={this.onButtonClick.bind(this, {
-              id: "share",
-              title: "Partager",
+              id: 'share',
+              title: 'Partager',
             })}
           >
             <ListItemIcon>
               <Share />
             </ListItemIcon>
-            <ListItemText primary="Partager" />
+            <ListItemText primary='Partager' />
           </ListItem>
         </List>
         <Divider />
         <List>
-          <ListItem key="version">
+          <ListItem key='version'>
             <ListItemText>
               <Typography
-                variant="caption"
-                color="textSecondary"
-                align="center"
+                variant='caption'
+                color='textSecondary'
+                align='center'
               >
                 {`Version ${packageJson.version}`}
               </Typography>
@@ -82,30 +84,30 @@ export default class Menu extends React.Component<Props> {
         </List>
         <Divider />
         <List>
-          <ListItem key="github">
+          <ListItem key='github'>
             <ListItemText>
               <Typography
-                variant="caption"
-                color="textSecondary"
-                align="center"
+                variant='caption'
+                color='textSecondary'
+                align='center'
               >
                 <Link
-                  href="https://github.com/xavierbriole/coronavirus-france"
-                  target="_blank"
+                  href='https://github.com/xavierbriole/coronavirus-france'
+                  target='_blank'
                 >
                   GitHub
                 </Link>
               </Typography>
             </ListItemText>
           </ListItem>
-          <ListItem key="credits">
+          <ListItem key='credits'>
             <ListItemText>
               <Typography
-                variant="caption"
-                color="textSecondary"
-                align="center"
+                variant='caption'
+                color='textSecondary'
+                align='center'
               >
-                <Link href="https://www.esrifrance.fr/" target="_blank">
+                <Link href='https://www.esrifrance.fr/' target='_blank'>
                   Carte réalisée par Esri France
                 </Link>
               </Typography>
@@ -113,6 +115,6 @@ export default class Menu extends React.Component<Props> {
           </ListItem>
         </List>
       </React.Fragment>
-    );
+    )
   }
 }
