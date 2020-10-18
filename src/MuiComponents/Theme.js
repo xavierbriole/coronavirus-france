@@ -3,18 +3,23 @@
 import * as React from 'react'
 import { createMuiTheme } from '@material-ui/core'
 import { ThemeProvider } from '@material-ui/styles'
-import { blueGrey, grey } from '@material-ui/core/colors'
+import { orange, grey } from '@material-ui/core/colors'
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: blueGrey[900],
+      main: orange['A700'],
     },
     secondary: {
-      main: grey[50],
+      main: '#FFFFFF',
+    },
+    text: {
+      primary: '#FFFFFF',
+      secondary: '#FFFFFF',
     },
     background: {
-      default: '#000000',
+      default: grey['A400'],
+      paper: grey['A400'],
     },
   },
   typography: {

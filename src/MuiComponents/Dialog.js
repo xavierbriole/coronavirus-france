@@ -50,13 +50,13 @@ export default function FullScreenDialog({
         <Toolbar>
           <IconButton
             edge='start'
-            color='inherit'
+            color='secondary'
             onClick={onClose}
             aria-label='close'
           >
             <CloseIcon />
           </IconButton>
-          <Typography variant='h6' className={classes.title}>
+          <Typography variant='h6' color='secondary' className={classes.title}>
             {title}
           </Typography>
         </Toolbar>

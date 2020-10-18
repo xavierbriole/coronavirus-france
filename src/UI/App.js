@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import ReactGA from 'react-ga'
-import { Theme, NavigationBar, Dialog } from '../MuiComponents'
+import { Theme, NavigationBar, Dialog, Snack } from '../MuiComponents'
 import Menu from './Menu'
 import Frame from './Frame'
 import FAQ from './FAQ'
@@ -90,6 +90,9 @@ export default class App extends React.Component<{}, State> {
             title={
               <Link href={window.location} color='secondary' underline='none'>
                 Coronavirus en France
+                <span role='img' aria-label='halloween' style={{ margin: 10 }}>
+                  🎃
+                </span>
               </Link>
             }
             menu={<Menu onItemClick={this.handleModalOpen.bind(this)} />}
@@ -97,6 +100,7 @@ export default class App extends React.Component<{}, State> {
             <Frame />
           </NavigationBar>
           <CookieNotice />
+          <Snack message='Les attestations de déplacement pour le couvre-feu sont disponibles ! Rendez-vous dans le menu "Attestations"' />
         </React.Fragment>
       </Theme>
     )

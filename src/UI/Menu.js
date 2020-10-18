@@ -37,7 +37,7 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <QuestionAnswer />
+              <QuestionAnswer color='primary' />
             </ListItemIcon>
             <ListItemText primary='FAQ' />
           </ListItem>
@@ -50,7 +50,7 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <CloudDownload />
+              <CloudDownload color='primary' />
             </ListItemIcon>
             <ListItemText primary='Attestations' />
           </ListItem>
@@ -63,7 +63,7 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <Share />
+              <Share color='primary' />
             </ListItemIcon>
             <ListItemText primary='Partager' />
           </ListItem>
@@ -72,11 +72,7 @@ export default class Menu extends React.Component<Props> {
         <List>
           <ListItem key='version'>
             <ListItemText>
-              <Typography
-                variant='caption'
-                color='textSecondary'
-                align='center'
-              >
+              <Typography variant='caption' color='textPrimary'>
                 {`Version ${packageJson.version}`}
               </Typography>
             </ListItemText>
@@ -86,11 +82,7 @@ export default class Menu extends React.Component<Props> {
         <List>
           <ListItem key='github'>
             <ListItemText>
-              <Typography
-                variant='caption'
-                color='textSecondary'
-                align='center'
-              >
+              <Typography variant='caption' color='textSecondary'>
                 <Link
                   href='https://github.com/xavierbriole/coronavirus-france'
                   target='_blank'
@@ -102,11 +94,7 @@ export default class Menu extends React.Component<Props> {
           </ListItem>
           <ListItem key='credits'>
             <ListItemText>
-              <Typography
-                variant='caption'
-                color='textSecondary'
-                align='center'
-              >
+              <Typography variant='caption' color='textSecondary'>
                 <Link href='https://www.esrifrance.fr/' target='_blank'>
                   Carte réalisée par Esri France
                 </Link>
