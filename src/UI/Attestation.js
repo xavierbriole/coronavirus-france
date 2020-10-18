@@ -1,104 +1,71 @@
 // @flow
 
 import * as React from 'react'
-import {
-  IconButton,
-  Link,
-  Container,
-  Typography,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-} from '@material-ui/core'
-import PDFIcon from './Icons/PDF'
+import { List } from '../MuiComponents'
 import ReactGA from 'react-ga'
 
 export default class Attestation extends React.Component<{}> {
-  onDeplacementDerogatoireClick() {
+  onItemClick(subheaderId: string, contentId: string, url?: string) {
     ReactGA.event({
       category: 'user',
       action: 'download',
-      label: 'deplacement-derogatoire',
+      label: `${subheaderId === '' ? '' : `${subheaderId}-`}${contentId}`,
     })
-  }
 
-  onDeplacementProfessionnelClick() {
-    ReactGA.event({
-      category: 'user',
-      action: 'download',
-      label: 'deplacement-professionnel',
-    })
+    window.open(url)
   }
 
   render(): React.Node {
     return (
-      <Container maxWidth='sm' style={{ padding: 20 }}>
-        <List>
-          <ListItem onClick={this.onDeplacementDerogatoireClick.bind(this)}>
-            <ListItemIcon>
-              <IconButton>
-                <Link
-                  href={
-                    process.env.PUBLIC_URL
-                      ? `${process.env.PUBLIC_URL}/files/attestation-deplacement-fr.pdf`
-                      : undefined
-                  }
-                  target='_blank'
-                >
-                  <PDFIcon />
-                </Link>
-              </IconButton>
-            </ListItemIcon>
-            <ListItemText>
-              <Typography variant='h5' align='center'>
-                <Link
-                  href={
-                    process.env.PUBLIC_URL
-                      ? `${process.env.PUBLIC_URL}/files/attestation-deplacement-fr.pdf`
-                      : undefined
-                  }
-                  target='_blank'
-                  underline='none'
-                >
-                  Attestation de déplacement dérogatoire
-                </Link>
-              </Typography>
-            </ListItemText>
-          </ListItem>
-          <ListItem onClick={this.onDeplacementProfessionnelClick.bind(this)}>
-            <ListItemIcon>
-              <IconButton>
-                <Link
-                  href={
-                    process.env.PUBLIC_URL
-                      ? `${process.env.PUBLIC_URL}/files/Justificatif_de_deplacement_professionnel.pdf`
-                      : undefined
-                  }
-                  target='_blank'
-                >
-                  <PDFIcon />
-                </Link>
-              </IconButton>
-            </ListItemIcon>
-            <ListItemText>
-              <Typography variant='h5' align='center'>
-                <Link
-                  href={
-                    process.env.PUBLIC_URL
-                      ? `${process.env.PUBLIC_URL}/files/Justificatif_de_deplacement_professionnel.pdf`
-                      : undefined
-                  }
-                  target='_blank'
-                  underline='none'
-                >
-                  Justificatif de déplacement professionnel
-                </Link>
-              </Typography>
-            </ListItemText>
-          </ListItem>
-        </List>
-      </Container>
+      <List
+        onClick={this.onItemClick.bind(this)}
+        items={[
+          {
+            id: 'couvre-feu',
+            subheaderTitle: 'Couvre-feu',
+            contents: [
+              {
+                id: 'deplacement-derogatoire',
+                title: 'Attestation de déplacement dérogatoire',
+                updated: '17 octobre 2020',
+                url: process.env.PUBLIC_URL
+                  ? `${process.env.PUBLIC_URL}/files/couvre-feu/attestation-de-deplacement-derogatoire.pdf`
+                  : undefined,
+              },
+              {
+                id: 'deplacement-professionnel',
+                title: 'Justificatif de déplacement professionnel',
+                updated: '17 octobre 2020',
+                url: process.env.PUBLIC_URL
+                  ? `${process.env.PUBLIC_URL}/files/couvre-feu/justificatif-de-deplacement-professionnel.pdf`
+                  : undefined,
+              },
+            ],
+          },
+          {
+            id: '',
+            subheaderTitle: 'Confinement',
+            contents: [
+              {
+                id: 'deplacement-derogatoire',
+                title: 'Attestation de déplacement dérogatoire',
+                updated: '15 avril 2020',
+                url: process.env.PUBLIC_URL
+                  ? `${process.env.PUBLIC_URL}/files/confinement/attestation-deplacement-fr.pdf`
+                  : undefined,
+              },
+              {
+                id: 'deplacement-professionnel',
+                title: 'Justificatif de déplacement professionnel',
+                updated: '15 avril 2020',
+                url: process.env.PUBLIC_URL
+                  ? `${process.env.PUBLIC_URL}/files/confinement/Justificatif_de_deplacement_professionnel.pdf`
+                  : undefined,
+              },
+            ],
+          },
+        ]}
+      />
     )
   }
 }
