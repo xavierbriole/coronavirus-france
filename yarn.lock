@@ -9111,10 +9111,10 @@ react-app-polyfill@^1.0.6:
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
 
-react-cookienotice@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/react-cookienotice/-/react-cookienotice-3.3.0.tgz#90f3c9b2d547301cb2c512b7dff98746130b76a7"
-  integrity sha512-cjt8vDH/Nzw7PLzepBb+onHpz45J5g7uLFld2SRJp1TBkSaFFnunVxPFLS2N8VA2RPI/2zuSX9a9VYdB92XwLg==
+react-cookienotice@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/react-cookienotice/-/react-cookienotice-3.4.0.tgz#be438848e4bb09ad65b0242784e9ddc1ca5a132d"
+  integrity sha512-Qmg0Y7Uv80WvWm84YIqbcTf7ISiLcT45rKRU7ABkr05tu6ergryk76CM6R3NAjB9ocUTiIp+i4BAKTVZX7F5Cg==
   dependencies:
     clsx "^1.1.1"
     styled-components "^4.4.1"
