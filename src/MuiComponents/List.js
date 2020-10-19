@@ -34,10 +34,10 @@ type Props = {|
       id: string,
       title: string,
       updated: string,
-      url?: string,
+      url: string,
     }>,
   }>,
-  onClick: (subheaderId: string, contentId: string, url?: string) => void,
+  onClick: (subheaderId: string, contentId: string, url: string) => void,
 |}
 
 export default function PinnedSubheaderList({
