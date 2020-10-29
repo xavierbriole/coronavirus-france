@@ -9,6 +9,7 @@ import {
   ListItemText,
   Typography,
   Link,
+  Badge,
 } from '@material-ui/core'
 import { QuestionAnswer, Share, CloudDownload } from '@material-ui/icons'
 import packageJson from '../../package.json'
@@ -50,7 +51,9 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <CloudDownload color='primary' />
+              <Badge color='error' badgeContent={3}>
+                <CloudDownload color='primary' />
+              </Badge>
             </ListItemIcon>
             <ListItemText primary='Attestations' />
           </ListItem>
@@ -66,16 +69,6 @@ export default class Menu extends React.Component<Props> {
               <Share color='primary' />
             </ListItemIcon>
             <ListItemText primary='Partager' />
-          </ListItem>
-        </List>
-        <Divider />
-        <List>
-          <ListItem key='version'>
-            <ListItemText>
-              <Typography variant='caption' color='textPrimary'>
-                {`Version ${packageJson.version}`}
-              </Typography>
-            </ListItemText>
           </ListItem>
         </List>
         <Divider />
@@ -98,6 +91,23 @@ export default class Menu extends React.Component<Props> {
                 <Link href='https://www.esrifrance.fr/' target='_blank'>
                   Carte réalisée par Esri France
                 </Link>
+              </Typography>
+            </ListItemText>
+          </ListItem>
+        </List>
+        <Divider />
+        <List>
+          <ListItem key='version'>
+            <ListItemText>
+              <Typography variant='caption' color='textPrimary'>
+                {`Version ${packageJson.version}`}
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem key='author'>
+            <ListItemText>
+              <Typography variant='caption' color='textSecondary'>
+                2020 © Xavier B.
               </Typography>
             </ListItemText>
           </ListItem>

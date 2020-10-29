@@ -9,6 +9,7 @@ import ListSubheader from '@material-ui/core/ListSubheader'
 import ListAvatar from '@material-ui/core/Avatar'
 import ListItemAvatar from '@material-ui/core/ListItemAvatar'
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf'
+import Badge from '@material-ui/core/Badge'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,6 +36,7 @@ type Props = {|
       title: string,
       updated: string,
       url: string,
+      new: boolean,
     }>,
   }>,
   onClick: (subheaderId: string, contentId: string, url: string) => void,
@@ -59,9 +61,15 @@ export default function PinnedSubheaderList({
                 button
               >
                 <ListItemAvatar>
-                  <ListAvatar>
-                    <PictureAsPdfIcon />
-                  </ListAvatar>
+                  <Badge
+                    color='error'
+                    badgeContent='New'
+                    invisible={!content.new}
+                  >
+                    <ListAvatar>
+                      <PictureAsPdfIcon />
+                    </ListAvatar>
+                  </Badge>
                 </ListItemAvatar>
                 <ListItemText
                   primary={content.title}

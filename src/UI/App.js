@@ -100,7 +100,7 @@ export default class App extends React.Component<{}, State> {
             <Frame />
           </NavigationBar>
           <CookieNotice />
-          <Snack message='Les attestations de déplacement pour le couvre-feu sont disponibles ! Rendez-vous dans le menu "Attestations"' />
+          <Snack message='Les attestations de déplacement pour le RECONFINEMENT sont disponibles ! Rendez-vous dans le menu "Attestations"' />
         </React.Fragment>
       </Theme>
     )
