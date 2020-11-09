@@ -90,9 +90,6 @@ export default class App extends React.Component<{}, State> {
             title={
               <Link href={window.location} color='secondary' underline='none'>
                 Coronavirus en France
-                <span role='img' aria-label='halloween' style={{ margin: 10 }}>
-                  🎃
-                </span>
               </Link>
             }
             menu={<Menu onItemClick={this.handleModalOpen.bind(this)} />}
