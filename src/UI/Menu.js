@@ -38,7 +38,7 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <QuestionAnswer color='primary' />
+              <QuestionAnswer color='secondary' />
             </ListItemIcon>
             <ListItemText primary='FAQ' />
           </ListItem>
@@ -52,7 +52,7 @@ export default class Menu extends React.Component<Props> {
           >
             <ListItemIcon>
               <Badge color='error' badgeContent={3}>
-                <CloudDownload color='primary' />
+                <CloudDownload color='secondary' />
               </Badge>
             </ListItemIcon>
             <ListItemText primary='Attestations' />
@@ -66,7 +66,7 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <Share color='primary' />
+              <Share color='secondary' />
             </ListItemIcon>
             <ListItemText primary='Partager' />
           </ListItem>
@@ -75,7 +75,7 @@ export default class Menu extends React.Component<Props> {
         <List>
           <ListItem key='github'>
             <ListItemText>
-              <Typography variant='caption' color='textSecondary'>
+              <Typography variant='caption' color='textPrimary'>
                 <Link
                   href='https://github.com/xavierbriole/coronavirus-france'
                   target='_blank'
@@ -87,7 +87,7 @@ export default class Menu extends React.Component<Props> {
           </ListItem>
           <ListItem key='credits'>
             <ListItemText>
-              <Typography variant='caption' color='textSecondary'>
+              <Typography variant='caption' color='textPrimary'>
                 <Link href='https://www.esrifrance.fr/' target='_blank'>
                   Carte réalisée par Esri France
                 </Link>
@@ -106,7 +106,7 @@ export default class Menu extends React.Component<Props> {
           </ListItem>
           <ListItem key='author'>
             <ListItemText>
-              <Typography variant='caption' color='textSecondary'>
+              <Typography variant='caption' color='textPrimary'>
                 2020 © Xavier B.
               </Typography>
             </ListItemText>

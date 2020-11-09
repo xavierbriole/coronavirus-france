@@ -132,9 +132,9 @@ export default function PersistentDrawerLeft({
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? (
-              <ChevronLeftIcon color='primary' />
+              <ChevronLeftIcon color='secondary' />
             ) : (
-              <ChevronRightIcon color='primary' />
+              <ChevronRightIcon color='secondary' />
             )}
           </IconButton>
         </div>
