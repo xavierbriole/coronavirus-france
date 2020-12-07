@@ -10,21 +10,32 @@ import Share from './Share'
 import Attestation from './Attestation'
 import { Link } from '@material-ui/core'
 import CookieNotice from 'react-cookienotice'
+import Storage from '../Helpers/storage'
+import packageJson from '../../package.json'
 
 type State = {|
   modalOpen: boolean,
+  snackOpen: boolean,
   currentItem?: { id: string, title: string },
 |}
 
 export default class App extends React.Component<{}, State> {
   UA: string
+  displaySnackVersion: string
 
   constructor(props: {}) {
     super(props)
 
     this.UA = 'UA-127796557-2'
+    this.displaySnackVersion = `displaySnack-${packageJson.version}`
 
-    this.state = { modalOpen: false, currentItem: undefined }
+    const shouldDisplaySnack = Storage.get(this.displaySnackVersion) === null
+
+    this.state = {
+      modalOpen: false,
+      snackOpen: shouldDisplaySnack,
+      currentItem: undefined,
+    }
   }
 
   componentDidMount() {
@@ -40,18 +51,31 @@ export default class App extends React.Component<{}, State> {
   }
 
   handleModalOpen(item: { id: string, title: string }) {
-    this.setState({
-      modalOpen: true,
-      currentItem: { id: item.id, title: item.title },
-    })
-
-    ReactGA.event({ category: 'user', action: 'open-modal', label: item.id })
+    this.setState(
+      {
+        modalOpen: true,
+        currentItem: { id: item.id, title: item.title },
+      },
+      () => {
+        ReactGA.event({
+          category: 'user',
+          action: 'open-modal',
+          label: item.id,
+        })
+      }
+    )
   }
 
   handleModalClose() {
-    this.setState({ modalOpen: false, currentItem: undefined })
+    this.setState({ modalOpen: false, currentItem: undefined }, () => {
+      ReactGA.event({ category: 'user', action: 'close-modal' })
+    })
+  }
 
-    ReactGA.event({ category: 'user', action: 'close-modal' })
+  handleSnackClose() {
+    this.setState({ snackOpen: false }, () => {
+      Storage.set(this.displaySnackVersion, 'false')
+    })
   }
 
   renderModalContent(): ?React.Node {
@@ -74,7 +98,7 @@ export default class App extends React.Component<{}, State> {
   }
 
   render(): React.Node {
-    const { modalOpen, currentItem } = this.state
+    const { modalOpen, snackOpen, currentItem } = this.state
 
     return (
       <Theme>
@@ -97,7 +121,11 @@ export default class App extends React.Component<{}, State> {
             <Frame />
           </NavigationBar>
           <CookieNotice />
-          <Snack message='Les attestations de déplacement pour le RECONFINEMENT sont disponibles ! Rendez-vous dans le menu "Attestations"' />
+          <Snack
+            message='Les attestations de déplacement pour le RECONFINEMENT sont disponibles ! Rendez-vous dans le menu "Attestations"'
+            onClose={this.handleSnackClose.bind(this)}
+            open={snackOpen}
+          />
         </React.Fragment>
       </Theme>
     )

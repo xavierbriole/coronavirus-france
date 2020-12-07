@@ -6,28 +6,23 @@ import MuiAlert from '@material-ui/lab/Alert'
 
 type Props = {|
   message: string,
+  open: boolean,
+  onClose: () => void,
 |}
 
 export default function PositionedSnackbar({
   message,
+  open,
+  onClose,
 }: Props): React$Element<any> {
-  const [state, setState] = React.useState({
-    open: true,
-    vertical: 'top',
-    horizontal: 'right',
-  })
-
-  const { vertical, horizontal, open } = state
-
   const handleClose = () => {
-    setState({ ...state, open: false })
+    onClose()
   }
 
   return (
     <Snackbar
-      anchorOrigin={{ vertical, horizontal }}
+      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
       open={open}
-      key={vertical + horizontal}
       autoHideDuration={20000}
       style={{ maxWidth: 300 }}
     >
