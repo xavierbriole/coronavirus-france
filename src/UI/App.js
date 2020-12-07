@@ -122,7 +122,7 @@ export default class App extends React.Component<{}, State> {
           </NavigationBar>
           <CookieNotice />
           <Snack
-            message='Les attestations de déplacement pour le RECONFINEMENT sont disponibles ! Rendez-vous dans le menu "Attestations"'
+            message='La nouvelle attestation de déplacement dérogatoire pour le RECONFINEMENT ALLÉGÉ est disponible ! Rendez-vous dans le menu "Attestations"'
             onClose={this.handleSnackClose.bind(this)}
             open={snackOpen}
           />
