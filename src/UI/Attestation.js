@@ -21,29 +21,42 @@ export default class Attestation extends React.Component<{}> {
         onClick={this.onItemClick.bind(this)}
         items={[
           {
+            id: 'reconfinement-soft',
+            subheaderTitle: 'Reconfinement allégé',
+            contents: [
+              {
+                id: 'deplacement-derogatoire',
+                title: 'Attestation de déplacement dérogatoire',
+                updated: '28 novembre 2020',
+                url: `${window.location}files/reconfinement-soft/28-11-2020-attestation-de-deplacement-derogatoire.pdf`,
+                new: true,
+              },
+            ],
+          },
+          {
             id: 'reconfinement',
             subheaderTitle: 'Reconfinement',
             contents: [
               {
                 id: 'deplacement-derogatoire',
                 title: 'Attestation de déplacement dérogatoire',
-                updated: '29 octobre 2020',
+                updated: '30 octobre 2020',
                 url: `${window.location}files/reconfinement/30-10-2020-attestation-de-deplacement-derogatoire.pdf`,
-                new: true,
+                new: false,
               },
               {
                 id: 'deplacement-professionnel',
                 title: 'Justificatif de déplacement professionnel',
-                updated: '29 octobre 2020',
+                updated: '30 octobre 2020',
                 url: `${window.location}files/reconfinement/30-10-2020-justificatif-de-deplacement-professionnel.pdf`,
-                new: true,
+                new: false,
               },
               {
                 id: 'deplacement-scolaire',
                 title: 'Justificatif de déplacement scolaire',
-                updated: '29 octobre 2020',
+                updated: '30 octobre 2020',
                 url: `${window.location}files/reconfinement/30-10-2020-justificatif-de-deplacement-scolaire.pdf`,
-                new: true,
+                new: false,
               },
             ],
           },
