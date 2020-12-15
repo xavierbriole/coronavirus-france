@@ -46,7 +46,9 @@ export default class Share extends React.Component<{}, State> {
     const { displaySnack } = this.state
 
     return (
-      <Container style={{ padding: 20 }}>
+      <Container
+        style={{ padding: 20, position: 'relative', overflow: 'auto' }}
+      >
         <Grid
           direction='column'
           alignContent='center'

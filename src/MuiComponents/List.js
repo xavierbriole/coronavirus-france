@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'inherit',
     padding: 0,
   },
+  subheader: {
+    zIndex: 2,
+  },
 }))
 
 type Props = {|
@@ -53,7 +56,9 @@ export default function PinnedSubheaderList({
       {items.map((item) => (
         <li key={`section-${item.id}`} className={classes.listSection}>
           <ul className={classes.ul}>
-            <ListSubheader>{item.subheaderTitle}</ListSubheader>
+            <ListSubheader className={classes.subheader}>
+              {item.subheaderTitle}
+            </ListSubheader>
             {item.contents.map((content) => (
               <ListItem
                 key={`item-${content.id}`}
