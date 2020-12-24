@@ -3,12 +3,12 @@
 import * as React from 'react'
 import { createMuiTheme } from '@material-ui/core'
 import { ThemeProvider } from '@material-ui/styles'
-import { indigo, grey } from '@material-ui/core/colors'
+import { grey, green } from '@material-ui/core/colors'
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: indigo['700'],
+      main: green['700'],
     },
     secondary: {
       main: grey['50'],

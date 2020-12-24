@@ -9,7 +9,6 @@ import FAQ from './FAQ'
 import Share from './Share'
 import Attestation from './Attestation'
 import { Link } from '@material-ui/core'
-import CookieNotice from 'react-cookienotice'
 import Storage from '../Helpers/storage'
 import packageJson from '../../package.json'
 
@@ -114,13 +113,15 @@ export default class App extends React.Component<{}, State> {
             title={
               <Link href={window.location} color='secondary' underline='none'>
                 Coronavirus en France
+                <span role='img' aria-label='christmas' style={{ margin: 10 }}>
+                  🎄
+                </span>
               </Link>
             }
             menu={<Menu onItemClick={this.handleModalOpen.bind(this)} />}
           >
             <Frame />
           </NavigationBar>
-          <CookieNotice />
           <Snack
             message='Attestations pour le nouveau couvre-feu disponibles !'
             onClose={this.handleSnackClose.bind(this)}

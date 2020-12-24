@@ -107,7 +107,18 @@ export default class Menu extends React.Component<Props> {
           <ListItem key='author'>
             <ListItemText>
               <Typography variant='caption' color='textPrimary'>
-                2020 © Xavier B.
+                {`${new Date().getFullYear()} © Xavier B.`}
+              </Typography>
+            </ListItemText>
+          </ListItem>
+        </List>
+        <Divider />
+        <List>
+          <ListItem key='cookies'>
+            <ListItemText>
+              <Typography variant='caption' color='textPrimary'>
+                Ce site utilise les cookies pour améliorer votre expérience de
+                navigation.
               </Typography>
             </ListItemText>
           </ListItem>
