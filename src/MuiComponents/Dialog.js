@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2),
     flex: 1,
   },
+  closeIcon: {
+    color: theme.palette.text.secondary,
+  },
 }))
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -48,15 +51,14 @@ export default function FullScreenDialog({
     >
       <AppBar className={classes.appBar}>
         <Toolbar>
-          <IconButton
-            edge='start'
-            color='secondary'
-            onClick={onClose}
-            aria-label='close'
-          >
-            <CloseIcon />
+          <IconButton edge='start' onClick={onClose} aria-label='close'>
+            <CloseIcon className={classes.closeIcon} />
           </IconButton>
-          <Typography variant='h6' color='secondary' className={classes.title}>
+          <Typography
+            variant='h6'
+            color='textSecondary'
+            className={classes.title}
+          >
             {title}
           </Typography>
         </Toolbar>

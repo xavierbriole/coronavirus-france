@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
+import Typography from '@material-ui/core/Typography'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 0,
   },
   subheader: {
+    color: theme.palette.text.primary,
     zIndex: 2,
   },
 }))
@@ -77,8 +79,12 @@ export default function PinnedSubheaderList({
                   </Badge>
                 </ListItemAvatar>
                 <ListItemText
-                  primary={content.title}
-                  secondary={content.updated}
+                  primary={
+                    <Typography variant='body1'>{content.title}</Typography>
+                  }
+                  secondary={
+                    <Typography variant='body2'>{content.updated}</Typography>
+                  }
                 />
               </ListItem>
             ))}

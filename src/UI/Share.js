@@ -60,17 +60,13 @@ export default class Share extends React.Component<{}, State> {
               text={window.location}
               onCopy={this.handleCopyButton.bind(this)}
             >
-              <Input
-                value={window.location}
-                disabled
-                style={{ color: '#ffffff' }}
-              />
+              <Input value={window.location} disabled />
             </CopyToClipboard>
             <CopyToClipboard
               text={window.location}
               onCopy={this.handleCopyButton.bind(this)}
             >
-              <IconButton color='secondary'>
+              <IconButton>
                 <FileCopy />
               </IconButton>
             </CopyToClipboard>
