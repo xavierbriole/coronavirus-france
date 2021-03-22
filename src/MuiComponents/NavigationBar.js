@@ -113,7 +113,7 @@ export default function PersistentDrawerLeft({
             edge='start'
             className={clsx(classes.menuButton, open && classes.hide)}
           >
-            <MenuIcon color='secondary' />
+            <MenuIcon color='textSecondary' />
           </IconButton>
           <Typography variant='h6' noWrap>
             {title}
@@ -132,9 +132,9 @@ export default function PersistentDrawerLeft({
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? (
-              <ChevronLeftIcon color='secondary' />
+              <ChevronLeftIcon color='textPrimary' />
             ) : (
-              <ChevronRightIcon color='secondary' />
+              <ChevronRightIcon color='textPrimary' />
             )}
           </IconButton>
         </div>

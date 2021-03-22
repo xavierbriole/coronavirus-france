@@ -111,7 +111,11 @@ export default class App extends React.Component<{}, State> {
           </Dialog>
           <NavigationBar
             title={
-              <Link href={window.location} color='secondary' underline='none'>
+              <Link
+                href={window.location}
+                color='textSecondary'
+                underline='none'
+              >
                 Coronavirus en France
               </Link>
             }

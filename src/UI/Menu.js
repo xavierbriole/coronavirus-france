@@ -38,9 +38,9 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <QuestionAnswer color='secondary' />
+              <QuestionAnswer color='textPrimary' />
             </ListItemIcon>
-            <ListItemText primary='FAQ' />
+            <ListItemText color='textPrimary' primary='FAQ' />
           </ListItem>
           <ListItem
             button
@@ -52,10 +52,10 @@ export default class Menu extends React.Component<Props> {
           >
             <ListItemIcon>
               <Badge color='error' badgeContent={4}>
-                <CloudDownload color='secondary' />
+                <CloudDownload color='textPrimary' />
               </Badge>
             </ListItemIcon>
-            <ListItemText primary='Attestations' />
+            <ListItemText color='textPrimary' primary='Attestations' />
           </ListItem>
           <ListItem
             button
@@ -66,9 +66,9 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <Share color='secondary' />
+              <Share color='textPrimary' />
             </ListItemIcon>
-            <ListItemText primary='Partager' />
+            <ListItemText color='textPrimary' primary='Partager' />
           </ListItem>
         </List>
         <Divider />

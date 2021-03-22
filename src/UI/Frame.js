@@ -15,7 +15,7 @@ export default class Frame extends React.Component<{}> {
               : '5df19abcf8714bc590a3b143e14a548c'
           }" class="iframe">`,
         }}
-      ></div>
+      />
     )
   }
 }
