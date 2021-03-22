@@ -51,7 +51,7 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <Badge color='error' badgeContent={3}>
+              <Badge color='error' badgeContent={4}>
                 <CloudDownload color='secondary' />
               </Badge>
             </ListItemIcon>
