@@ -5,7 +5,7 @@ import Snackbar from '@material-ui/core/Snackbar'
 import MuiAlert from '@material-ui/lab/Alert'
 
 type Props = {|
-  message: string,
+  message: React.Node,
   open: boolean,
   onClose: () => void,
 |}

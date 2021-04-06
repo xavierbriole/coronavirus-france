@@ -1,0 +1,267 @@
+[
+  {
+    "title": "Écoles maternelles, primaires",
+    "description": "3 semaines de fermeture : cours à distance du 6 au 9 avril dans toutes les zones scolaires, établissements fermés du 10 au 25 avril, retour en présentiel prévu le 26 avril",
+    "color": "red"
+  },
+  {
+    "title": "Collèges",
+    "description": "4 semaines de fermeture : cours à distance du 6 au 9 avril dans toutes les zones scolaires, établissements fermés du 10 au 25 avril, cours à distance à partir du 26 avril, retour en présentiel à partir du 3 mai",
+    "color": "red"
+  },
+  {
+    "title": "Lycées",
+    "description": "4 semaines de fermeture : cours à distance du 6 au 9 avril dans toutes les zones scolaires, établissements fermés du 10 au 25 avril, cours à distance à partir du 26 avril, retour en présentiel à partir du 3 mai",
+    "color": "red"
+  },
+  {
+    "title": "Universités",
+    "description": "Les étudiants qui le souhaitent pourront continuer pendant le mois qui vient à se rendre à l'université \"pour une journée de cours par semaine\", a déclaré Emmanuel Macron le 31 mars. Les concours seront également maintenus",
+    "color": "orange"
+  },
+  {
+    "title": "Crèches",
+    "description": "Fermées jusqu'au 25 avril",
+    "color": "red"
+  },
+  {
+    "title": "Centres de loisirs",
+    "description": "Le porte-parole du gouvernement Gabriel Attal a assuré qu'il \"n'y aura pas d'activités périscolaires\" pendant les vacances",
+    "color": "red"
+  },
+  {
+    "title": "Ehpad, maison de retraite",
+    "description": "Visites possibles dans le strict respect des gestes barrières",
+    "color": "green"
+  },
+  {
+    "title": "Lieux de cultes",
+    "description": "Restent ouverts dans les mêmes conditions que ces derniers mois",
+    "color": "green"
+  },
+  {
+    "title": "Se déplacer après 19h",
+    "description": "Interdit pendant le couvre-feu (19h-06h) sauf pour quelques motifs : raisons professionnelles, motifs familiaux impérieux, assistance à une personne en situation de handicap, raisons de santé, missions d'intérêt général, besoin des animaux de compagnie",
+    "color": "red"
+  },
+  {
+    "title": "Se promener, s'aérer",
+    "description": "Possible dans un rayon limité à 10 km autour de chez soi, sans aucune limitation de durée mais avant 19h, avec un justificatif de domicile",
+    "color": "orange"
+  },
+  {
+    "title": "Faire du sport en extérieur",
+    "description": "Possible dans un rayon limité à 10 km autour de chez soi, sans aucune limitation de durée mais avant 19h, avec un justificatif de domicile",
+    "color": "orange"
+  },
+  {
+    "title": "Sortir son animal après 19h",
+    "description": "Autorisé à condition d'avoir rempli une attestation, dans un rayon limité à 1 km autour de chez soi",
+    "color": "green"
+  },
+  {
+    "title": "Revenir du travail après 19h",
+    "description": "Autorisé à condition d'avoir rempli une attestation",
+    "color": "green"
+  },
+  {
+    "title": "Télétravailler",
+    "description": "\"Le télétravail doit être systématisé\", a déclaré Emmanuel Macron le 31 mars. Jean Castex a précisé le lendemain qu'il devait être mis en place \"au moins quatre jours par semaine pour tous les emplois publics et privés\"",
+    "color": "green"
+  },
+  {
+    "title": "Se regrouper à plus de 6 en extérieur",
+    "description": "Les rassemblements, réunions ou activités sur la voie publique (...) mettant en présence de manière simultanée plus de six personnes sont interdits",
+    "color": "red"
+  },
+  {
+    "title": "Consommer de l'alcool sur la voie publique",
+    "description": "\"La consommation d‘alcool sur la voie publique sera interdite\", a déclaré Jean Castex le 1 avril",
+    "color": "red"
+  },
+  {
+    "title": "Soirées privées, réunions familiales",
+    "description": "\"Il faut limiter les réunions privées, les fêtes\", a déclaré Emmanuel Macron le 31 mars",
+    "color": "red"
+  },
+  {
+    "title": "Se déplacer, voyager hors de sa région ce week-end",
+    "description": "Les déplacements inter-régionaux seront tolérés le week-end de Pâques (3, 4 et 5 avril)",
+    "color": "orange"
+  },
+  {
+    "title": "Se déplacer, voyager hors de sa région après ce week-end",
+    "description": "Interdit",
+    "color": "red"
+  },
+  {
+    "title": "Services publics",
+    "description": "Restent ouverts",
+    "color": "green"
+  },
+  {
+    "title": "Banques, La Poste",
+    "description": "Restent ouverts",
+    "color": "green"
+  },
+  {
+    "title": "Bars, cafés",
+    "description": "Fermés",
+    "color": "red"
+  },
+  {
+    "title": "Restaurants",
+    "description": "Les restaurants ne peuvent plus accueillir de public mais peuvent mettre en place des systèmes de livraison et de retrait de commande",
+    "color": "red"
+  },
+  {
+    "title": "Livraisons de repas, de produits divers",
+    "description": "Restent autorisées",
+    "color": "green"
+  },
+  {
+    "title": "Commerces essentiels",
+    "description": "Les commerces essentiels peuvent rester ouverts (magasins alimentaires, magasins de réparations, bureaux de tabac, hôtels, banques, blanchisseries, agences d'interim, pompes à essence, pharmacies...)",
+    "color": "green"
+  },
+  {
+    "title": "Commerces non-essentiels",
+    "description": "Les commerces non-essentiels ne peuvent plus accueillir de public mais peuvent mettre en place des systèmes de livraison et de retrait de commande",
+    "color": "red"
+  },
+  {
+    "title": "Librairies, disquaires",
+    "description": "Restent ouverts, la \"notion de bien de première nécessité\" étant \"étendue aux livres et à la musique\"",
+    "color": "green"
+  },
+  {
+    "title": "Salons de coiffure",
+    "description": "Restent ouverts",
+    "color": "green"
+  },
+  {
+    "title": "Magasins de bricolage, cordonniers, fleuristes",
+    "description": "Restent ouverts",
+    "color": "green"
+  },
+  {
+    "title": "Chocolatiers",
+    "description": "Restent ouverts",
+    "color": "green"
+  },
+  {
+    "title": "Magasins de vêtements, parfumeries, bijouteries",
+    "description": "Fermés",
+    "color": "red"
+  },
+  {
+    "title": "Instituts de beauté",
+    "description": "Fermés",
+    "color": "red"
+  },
+  {
+    "title": "Ouvrir son commerce après 19h",
+    "description": "Interdit",
+    "color": "red"
+  },
+  {
+    "title": "Faire des courses après 19h",
+    "description": "Interdit",
+    "color": "red"
+  },
+  {
+    "title": "Cinémas, théâtres, salles de concerts",
+    "description": "Fermés",
+    "color": "red"
+  },
+  {
+    "title": "Discothèques, boîtes de nuit",
+    "description": "Fermés",
+    "color": "red"
+  },
+  {
+    "title": "Musées",
+    "description": "Fermés",
+    "color": "red"
+  },
+  {
+    "title": "Conservatoires, clubs de sport",
+    "description": "Fermés",
+    "color": "red"
+  },
+  {
+    "title": "Salles de sport, club fitness",
+    "description": "Fermés",
+    "color": "red"
+  },
+  {
+    "title": "Gymnases, salles polyvalentes, piscines",
+    "description": "Fermés",
+    "color": "red"
+  },
+  {
+    "title": "Stades, enceintes sportives",
+    "description": "Fermés",
+    "color": "red"
+  },
+  {
+    "title": "Rencontres sportives professionnelles",
+    "description": "Restent autorisées mais les matchs se feront à huis-clos",
+    "color": "orange"
+  },
+  {
+    "title": "Pratique du sport collectif ou en lieu couvert",
+    "description": "Interdite",
+    "color": "red"
+  },
+  {
+    "title": "Chasse, pêche",
+    "description": "Autorisée jusqu'à 19h",
+    "color": "green"
+  },
+  {
+    "title": "Plages, forêts",
+    "description": "Accessibles jusqu'à 19h",
+    "color": "green"
+  },
+  {
+    "title": "Parcs, jardins",
+    "description": "Ouverts jusqu'à 19h",
+    "color": "green"
+  },
+  {
+    "title": "Transports en commun (bus, trams, métro, trains...)",
+    "description": "Accessibles",
+    "color": "green"
+  },
+  {
+    "title": "Taxis, VTC",
+    "description": "Accessibles",
+    "color": "green"
+  },
+  {
+    "title": "Visites immobilières",
+    "description": "Les agences restent fermées mais les visites sont possibles dans le cadre d'un achat, d'une vente ou d'une location",
+    "color": "orange"
+  },
+  {
+    "title": "Déménagments",
+    "description": "Autorisés \"sans limite de distance\"",
+    "color": "green"
+  },
+  {
+    "title": "Grands événements publics, foires, salons",
+    "description": "Interdits",
+    "color": "red"
+  },
+  {
+    "title": "Enterrements",
+    "description": "Les cérémonies funéraires sont limitées à 30 personnes",
+    "color": "orange"
+  },
+  {
+    "title": "Port du masque",
+    "description": "Obligatoire dans tous les lieux publics",
+    "color": "green"
+  }
+]

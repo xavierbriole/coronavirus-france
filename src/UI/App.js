@@ -8,6 +8,7 @@ import Frame from './Frame'
 import FAQ from './FAQ'
 import Share from './Share'
 import Attestation from './Attestation'
+import Infographic from './Infographic'
 import { Link } from '@material-ui/core'
 import Storage from '../Helpers/storage'
 import packageJson from '../../package.json'
@@ -91,6 +92,8 @@ export default class App extends React.Component<{}, State> {
         return <Share />
       case 'attest':
         return <Attestation />
+      case 'infographic':
+        return <Infographic />
       default:
         break
     }
@@ -124,7 +127,15 @@ export default class App extends React.Component<{}, State> {
             <Frame />
           </NavigationBar>
           <Snack
-            message='La nouvelle attestation unifiant confinement et couvre-feu est disponible !'
+            message={
+              <React.Fragment>
+                La nouvelle attestation unifiant confinement et couvre-feu est
+                disponible !<br />
+                <br />
+                Nouvelle section "Infographie" : recherchez ce qui est autorisé
+                et ce qui ne l'est pas
+              </React.Fragment>
+            }
             onClose={this.handleSnackClose.bind(this)}
             open={snackOpen}
           />

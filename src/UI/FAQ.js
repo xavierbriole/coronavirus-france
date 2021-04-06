@@ -3,7 +3,7 @@
 import * as React from 'react'
 import ReactGA from 'react-ga'
 import { Panel } from '../MuiComponents'
-import FAQData from '../FAQData.json'
+import faqDatas from '../datas/faq.json'
 
 export default class FAQ extends React.Component<{}> {
   onQuestionClick(title: string) {
@@ -12,10 +12,7 @@ export default class FAQ extends React.Component<{}> {
 
   render(): React.Node {
     return (
-      <Panel
-        datas={FAQData.faq}
-        onPanelOpen={this.onQuestionClick.bind(this)}
-      />
+      <Panel datas={faqDatas} onPanelOpen={this.onQuestionClick.bind(this)} />
     )
   }
 }
