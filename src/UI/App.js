@@ -124,7 +124,7 @@ export default class App extends React.Component<{}, State> {
             <Frame />
           </NavigationBar>
           <Snack
-            message='Les attestations pour le couvre-feu renforcé sont disponibles !'
+            message='La nouvelle attestation unifiant confinement et couvre-feu est disponible !'
             onClose={this.handleSnackClose.bind(this)}
             open={snackOpen}
           />
