@@ -1,6 +1,19 @@
 {
   "files": [
     {
+      "id": "final-confinement",
+      "subheaderTitle": "Confinement final",
+      "contents": [
+        {
+          "id": "deplacement-derogatoire",
+          "title": "Attestation de déplacement dérogatoire",
+          "updated": "3 avril 2021",
+          "url": "03-04-2021-attestation-de-deplacement-derogatoire.pdf",
+          "new": true
+        }
+      ]
+    },
+    {
       "id": "couvre-feu-renforce",
       "subheaderTitle": "Couvre-feu renforcé",
       "contents": [
@@ -9,28 +22,28 @@
           "title": "Attestation de déplacement dérogatoire (entre 19h et 6h)",
           "updated": "20 mars 2021",
           "url": "20-03-2021-attestation-deplacement-couvre-feu.pdf",
-          "new": true
+          "new": false
         },
         {
           "id": "deplacement-derogatoire-renforce",
           "title": "Attestation de déplacement dérogatoire dans les départements soumis à des mesures renforcées (entre 6h et 19h)",
           "updated": "20 mars 2021",
           "url": "20-03-2021-attestation-de-deplacement-mesures-renforcees.pdf",
-          "new": true
+          "new": false
         },
         {
           "id": "deplacement-professionnel",
           "title": "Justificatif de déplacement professionnel",
           "updated": "20 mars 2021",
           "url": "2021-03-19-justificatif-de-deplacement-professionnel.pdf",
-          "new": true
+          "new": false
         },
         {
           "id": "deplacement-scolaire",
           "title": "Justificatif de déplacement scolaire",
           "updated": "20 mars 2021",
           "url": "2021-03-19-justificatif-de-deplacement-scolaire.pdf",
-          "new": true
+          "new": false
         }
       ]
     },
