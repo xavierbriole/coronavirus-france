@@ -1,0 +1,156 @@
+[
+  {
+    "id": "final-confinement",
+    "subheaderTitle": "Confinement final",
+    "contents": [
+      {
+        "id": "deplacement-derogatoire",
+        "title": "Attestation de déplacement dérogatoire",
+        "updated": "3 avril 2021",
+        "url": "03-04-2021-attestation-de-deplacement-derogatoire.pdf",
+        "new": true
+      }
+    ]
+  },
+  {
+    "id": "couvre-feu-renforce",
+    "subheaderTitle": "Couvre-feu renforcé",
+    "contents": [
+      {
+        "id": "deplacement-derogatoire",
+        "title": "Attestation de déplacement dérogatoire (entre 19h et 6h)",
+        "updated": "20 mars 2021",
+        "url": "20-03-2021-attestation-deplacement-couvre-feu.pdf",
+        "new": false
+      },
+      {
+        "id": "deplacement-derogatoire-renforce",
+        "title": "Attestation de déplacement dérogatoire dans les départements soumis à des mesures renforcées (entre 6h et 19h)",
+        "updated": "20 mars 2021",
+        "url": "20-03-2021-attestation-de-deplacement-mesures-renforcees.pdf",
+        "new": false
+      },
+      {
+        "id": "deplacement-professionnel",
+        "title": "Justificatif de déplacement professionnel",
+        "updated": "20 mars 2021",
+        "url": "2021-03-19-justificatif-de-deplacement-professionnel.pdf",
+        "new": false
+      },
+      {
+        "id": "deplacement-scolaire",
+        "title": "Justificatif de déplacement scolaire",
+        "updated": "20 mars 2021",
+        "url": "2021-03-19-justificatif-de-deplacement-scolaire.pdf",
+        "new": false
+      }
+    ]
+  },
+  {
+    "id": "new-couvre-feu",
+    "subheaderTitle": "Nouveau couvre-feu",
+    "contents": [
+      {
+        "id": "deplacement-derogatoire",
+        "title": "Attestation de déplacement dérogatoire",
+        "updated": "31 décembre 2020",
+        "url": "31-12-2020-attestation-de-deplacement-derogatoire.pdf",
+        "new": false
+      },
+      {
+        "id": "deplacement-professionnel",
+        "title": "Justificatif de déplacement professionnel",
+        "updated": "31 décembre 2020",
+        "url": "31-12-2020-justificatif-de-deplacement-professionnel.pdf",
+        "new": false
+      },
+      {
+        "id": "deplacement-scolaire",
+        "title": "Justificatif de déplacement scolaire",
+        "updated": "31 décembre 2020",
+        "url": "31-12-2020-justificatif-de-deplacement-scolaire.pdf",
+        "new": false
+      }
+    ]
+  },
+  {
+    "id": "reconfinement-soft",
+    "subheaderTitle": "Reconfinement allégé",
+    "contents": [
+      {
+        "id": "deplacement-derogatoire",
+        "title": "Attestation de déplacement dérogatoire",
+        "updated": "28 novembre 2020",
+        "url": "28-11-2020-attestation-de-deplacement-derogatoire.pdf",
+        "new": false
+      }
+    ]
+  },
+  {
+    "id": "reconfinement",
+    "subheaderTitle": "Reconfinement",
+    "contents": [
+      {
+        "id": "deplacement-derogatoire",
+        "title": "Attestation de déplacement dérogatoire",
+        "updated": "30 octobre 2020",
+        "url": "30-10-2020-attestation-de-deplacement-derogatoire.pdf",
+        "new": false
+      },
+      {
+        "id": "deplacement-professionnel",
+        "title": "Justificatif de déplacement professionnel",
+        "updated": "30 octobre 2020",
+        "url": "30-10-2020-justificatif-de-deplacement-professionnel.pdf",
+        "new": false
+      },
+      {
+        "id": "deplacement-scolaire",
+        "title": "Justificatif de déplacement scolaire",
+        "updated": "30 octobre 2020",
+        "url": "30-10-2020-justificatif-de-deplacement-scolaire.pdf",
+        "new": false
+      }
+    ]
+  },
+  {
+    "id": "couvre-feu",
+    "subheaderTitle": "Couvre-feu",
+    "contents": [
+      {
+        "id": "deplacement-derogatoire",
+        "title": "Attestation de déplacement dérogatoire",
+        "updated": "17 octobre 2020",
+        "url": "attestation-de-deplacement-derogatoire.pdf",
+        "new": false
+      },
+      {
+        "id": "deplacement-professionnel",
+        "title": "Justificatif de déplacement professionnel",
+        "updated": "17 octobre 2020",
+        "url": "justificatif-de-deplacement-professionnel.pdf",
+        "new": false
+      }
+    ]
+  },
+  {
+    "id": "",
+    "subheaderTitle": "Confinement",
+    "contents": [
+      {
+        "id": "deplacement-derogatoire",
+        "title": "Attestation de déplacement dérogatoire",
+        "updated": "15 avril 2020",
+        "url": "attestation-deplacement-fr.pdf",
+        "new": false
+      },
+      {
+        "id": "deplacement-professionnel",
+        "title": "Justificatif de déplacement professionnel",
+        "updated": "15 avril 2020",
+        "url": "Justificatif_de_deplacement_professionnel.pdf",
+        "new": false
+      }
+    ]
+  }
+]

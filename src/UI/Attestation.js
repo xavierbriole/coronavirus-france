@@ -3,7 +3,7 @@
 import * as React from 'react'
 import { List } from '../MuiComponents'
 import ReactGA from 'react-ga'
-import attests from '../attests.json'
+import attestsDatas from '../datas/attests.json'
 
 export default class Attestation extends React.Component<{}> {
   onItemClick(subheaderId: string, contentId: string, url: string) {
@@ -21,6 +21,6 @@ export default class Attestation extends React.Component<{}> {
   }
 
   render(): React.Node {
-    return <List onClick={this.onItemClick.bind(this)} items={attests.files} />
+    return <List onClick={this.onItemClick.bind(this)} items={attestsDatas} />
   }
 }

@@ -11,7 +11,7 @@ import {
   Link,
   Badge,
 } from '@material-ui/core'
-import { QuestionAnswer, Share, CloudDownload } from '@material-ui/icons'
+import { QuestionAnswer, Share, CloudDownload, Info } from '@material-ui/icons'
 import packageJson from '../../package.json'
 
 type Props = {|
@@ -31,16 +31,18 @@ export default class Menu extends React.Component<Props> {
         <List>
           <ListItem
             button
-            key='faq'
+            key='infographic'
             onClick={this.onButtonClick.bind(this, {
-              id: 'faq',
-              title: 'Questions / Réponses',
+              id: 'infographic',
+              title: 'Infographie',
             })}
           >
             <ListItemIcon>
-              <QuestionAnswer color='textPrimary' />
+              <Badge color='error' badgeContent='!'>
+                <Info color='textPrimary' />
+              </Badge>
             </ListItemIcon>
-            <ListItemText color='textPrimary' primary='FAQ' />
+            <ListItemText color='textPrimary' primary='Infographie' />
           </ListItem>
           <ListItem
             button
@@ -56,6 +58,19 @@ export default class Menu extends React.Component<Props> {
               </Badge>
             </ListItemIcon>
             <ListItemText color='textPrimary' primary='Attestations' />
+          </ListItem>
+          <ListItem
+            button
+            key='faq'
+            onClick={this.onButtonClick.bind(this, {
+              id: 'faq',
+              title: 'Questions / Réponses',
+            })}
+          >
+            <ListItemIcon>
+              <QuestionAnswer color='textPrimary' />
+            </ListItemIcon>
+            <ListItemText color='textPrimary' primary='FAQ' />
           </ListItem>
           <ListItem
             button
