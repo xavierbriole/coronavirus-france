@@ -9,6 +9,7 @@ import FAQ from './FAQ'
 import Share from './Share'
 import Attestation from './Attestation'
 import Infographic from './Infographic'
+import Calendar from './Calendar'
 import { Link } from '@material-ui/core'
 import Storage from '../Helpers/storage'
 import packageJson from '../../package.json'
@@ -94,6 +95,8 @@ export default class App extends React.Component<{}, State> {
         return <Attestation />
       case 'infographic':
         return <Infographic />
+      case 'calendar':
+        return <Calendar />
       default:
         break
     }
@@ -129,11 +132,11 @@ export default class App extends React.Component<{}, State> {
           <Snack
             message={
               <React.Fragment>
-                La nouvelle attestation unifiant confinement et couvre-feu est
-                disponible !<br />
+                La nouvelle attestation pour le couvre feu à 21h est disponible
+                !<br />
                 <br />
-                Nouvelle section "Infographie" : recherchez ce qui est autorisé
-                et ce qui ne l'est pas
+                Nouvelle section "Calendrier" : découvrez le déconfinement étape
+                par étape
               </React.Fragment>
             }
             onClose={this.handleSnackClose.bind(this)}

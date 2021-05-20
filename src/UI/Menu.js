@@ -11,7 +11,13 @@ import {
   Link,
   Badge,
 } from '@material-ui/core'
-import { QuestionAnswer, Share, CloudDownload, Info } from '@material-ui/icons'
+import {
+  QuestionAnswer,
+  Share,
+  CloudDownload,
+  Info,
+  Event,
+} from '@material-ui/icons'
 import packageJson from '../../package.json'
 
 type Props = {|
@@ -31,18 +37,18 @@ export default class Menu extends React.Component<Props> {
         <List>
           <ListItem
             button
-            key='infographic'
+            key='calendar'
             onClick={this.onButtonClick.bind(this, {
-              id: 'infographic',
-              title: 'Infographie',
+              id: 'calendar',
+              title: 'Calendrier de déconfinement',
             })}
           >
             <ListItemIcon>
               <Badge color='error' badgeContent='!'>
-                <Info color='textPrimary' />
+                <Event color='textPrimary' />
               </Badge>
             </ListItemIcon>
-            <ListItemText color='textPrimary' primary='Infographie' />
+            <ListItemText color='textPrimary' primary='Calendrier' />
           </ListItem>
           <ListItem
             button
@@ -71,6 +77,19 @@ export default class Menu extends React.Component<Props> {
               <QuestionAnswer color='textPrimary' />
             </ListItemIcon>
             <ListItemText color='textPrimary' primary='FAQ' />
+          </ListItem>
+          <ListItem
+            button
+            key='infographic'
+            onClick={this.onButtonClick.bind(this, {
+              id: 'infographic',
+              title: 'Infographie',
+            })}
+          >
+            <ListItemIcon>
+              <Info color='textPrimary' />
+            </ListItemIcon>
+            <ListItemText color='textPrimary' primary='Infographie' />
           </ListItem>
           <ListItem
             button
