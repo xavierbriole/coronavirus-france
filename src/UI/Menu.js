@@ -1,6 +1,7 @@
 // @flow
 
 import * as React from 'react'
+import ReactGA from 'react-ga'
 import {
   Divider,
   List,
@@ -17,6 +18,7 @@ import {
   CloudDownload,
   Info,
   Event,
+  OpenInNew,
 } from '@material-ui/icons'
 import packageJson from '../../package.json'
 
@@ -29,6 +31,16 @@ export default class Menu extends React.Component<Props> {
     const { onItemClick } = this.props
 
     onItemClick(item)
+  }
+
+  onLinkClick() {
+    ReactGA.event({
+      category: 'user',
+      action: 'open-link',
+      label: `vaccin`,
+    })
+
+    window.open(`https://vitemadose.covidtracker.fr`)
   }
 
   render(): React.Node {
@@ -44,9 +56,7 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <Badge color='error' badgeContent='!'>
-                <Event color='textPrimary' />
-              </Badge>
+              <Event color='textPrimary' />
             </ListItemIcon>
             <ListItemText color='textPrimary' primary='Calendrier' />
           </ListItem>
@@ -59,9 +69,7 @@ export default class Menu extends React.Component<Props> {
             })}
           >
             <ListItemIcon>
-              <Badge color='error' badgeContent={1}>
-                <CloudDownload color='textPrimary' />
-              </Badge>
+              <CloudDownload color='textPrimary' />
             </ListItemIcon>
             <ListItemText color='textPrimary' primary='Attestations' />
           </ListItem>
@@ -90,6 +98,14 @@ export default class Menu extends React.Component<Props> {
               <Info color='textPrimary' />
             </ListItemIcon>
             <ListItemText color='textPrimary' primary='Infographie' />
+          </ListItem>
+          <ListItem button key='vaccin' onClick={this.onLinkClick.bind(this)}>
+            <ListItemIcon>
+              <Badge color='error' badgeContent='!'>
+                <OpenInNew color='textPrimary' />
+              </Badge>
+            </ListItemIcon>
+            <ListItemText color='textPrimary' primary='Vaccination' />
           </ListItem>
           <ListItem
             button
