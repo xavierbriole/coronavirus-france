@@ -1,17 +1,20 @@
 // @flow
 
 import * as React from 'react'
+import Typography from '@material-ui/core/Typography'
 import Snackbar from '@material-ui/core/Snackbar'
 import MuiAlert from '@material-ui/lab/Alert'
 
 type Props = {|
   message: React.Node,
+  severity: 'error' | 'info' | 'success' | 'warning',
   open: boolean,
   onClose: () => void,
 |}
 
 export default function PositionedSnackbar({
   message,
+  severity,
   open,
   onClose,
 }: Props): React$Element<any> {
@@ -30,9 +33,9 @@ export default function PositionedSnackbar({
         elevation={6}
         variant='filled'
         onClose={handleClose}
-        severity='error'
+        severity={severity}
       >
-        {message}
+        <Typography variant='caption'>{message}</Typography>
       </MuiAlert>
     </Snackbar>
   )

@@ -132,13 +132,12 @@ export default class App extends React.Component<{}, State> {
           <Snack
             message={
               <React.Fragment>
-                La nouvelle attestation pour le couvre feu à 21h est disponible
-                !<br />
+                Il n'y a plus de couvre-feu, profitez bien!
                 <br />
-                Nouvelle section "Calendrier" : découvrez le déconfinement étape
-                par étape
+                Pensez à vous faire vacciner!
               </React.Fragment>
             }
+            severity='success'
             onClose={this.handleSnackClose.bind(this)}
             open={snackOpen}
           />
