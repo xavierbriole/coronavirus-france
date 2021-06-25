@@ -1,0 +1,22 @@
+name: bump
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.26.0
+        env:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          with_v: true
+          default_bump: 'none'
